@@ -79,3 +79,39 @@ a:hover {
     -moz-box-shadow: 0px 0px 400px 86px #a481ff;
     text-decoration: underline white;
 }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 18px;
+    max-width: 950px;
+    margin-bottom: 20px;
+
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: navy;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: darkblue;
+}
