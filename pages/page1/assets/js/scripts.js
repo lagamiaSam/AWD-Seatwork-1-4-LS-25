@@ -26,10 +26,14 @@ function updatePlayerList() {
     let playerList = document.getElementById("playerList");
     playerList.innerHTML = "";
 
-    players.forEach(player => {
+    players.forEach((player, index) => {
         let playerDiv = document.createElement("div");
         playerDiv.classList.add("player-item");
-        playerDiv.innerHTML = `<strong>Name:</strong> ${player.name} | <strong>Score:</strong> ${player.score} | <strong>Level:</strong> ${player.level}`;
+        playerDiv.innerHTML = `
+            <strong>Name:</strong> ${player.name} | 
+            <strong>Score:</strong> ${player.score} | 
+            <strong>Level:</strong> ${player.level} 
+            <button onclick="deletePlayer(${index})">Delete</button>`;
         playerList.appendChild(playerDiv);
     });
 }
@@ -88,4 +92,9 @@ function sortPlayers() {
 function updateDisplay() {
     updatePlayerList();
     savePlayers();
+}
+
+function deletePlayer(index) {
+    players.splice(index, 1);
+    updateDisplay(); 
 }
