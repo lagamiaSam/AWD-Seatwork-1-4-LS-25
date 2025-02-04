@@ -123,3 +123,9 @@ a:hover {
 .cta-button:hover {
     background: darkblue;
 }
+
+@media (max-width: 1920px) {
+    body {
+        font-size: 18px;
+    }
+  }
