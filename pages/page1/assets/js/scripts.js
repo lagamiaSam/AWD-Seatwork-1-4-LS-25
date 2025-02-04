@@ -1,12 +1,14 @@
-let players = []
+let players = [];
 
-function addPlayer(){
+document.addEventListener("DOMContentLoaded", loadPlayers);
+
+function addPlayer() {
     let name = document.getElementById("playerName").value.trim();
     let score = parseInt(document.getElementById("playerScore").value);
     let level = parseInt(document.getElementById("playerLevel").value);
 
-    if(name && !isNaN(score) && !isNaN(level1)) {
-        let player = {name, score, level};
+    if (name && !isNaN(score) && !isNaN(level)) {
+        let player = { name, score, level };
         players.push(player);
 
         savePlayers();
@@ -22,7 +24,7 @@ function addPlayer(){
 
 function updatePlayerList() {
     let playerList = document.getElementById("playerList");
-    playerList.innerHTML = ""; 
+    playerList.innerHTML = "";
 
     players.forEach(player => {
         let playerDiv = document.createElement("div");
@@ -30,7 +32,6 @@ function updatePlayerList() {
         playerDiv.innerHTML = `<strong>Name:</strong> ${player.name} | <strong>Score:</strong> ${player.score} | <strong>Level:</strong> ${player.level}`;
         playerList.appendChild(playerDiv);
     });
-
 }
 
 function savePlayers() {
@@ -39,7 +40,7 @@ function savePlayers() {
 
 function loadPlayers() {
     let storedPlayers = localStorage.getItem("players");
-    if (storedPlayers){
+    if (storedPlayers) {
         players = JSON.parse(storedPlayers);
         updatePlayerList();
     }
@@ -51,11 +52,13 @@ function sortByName() {
 }
 
 function sortByScore() {
-    players.sort((a,b) => b.score - a.score);
+    players.sort((a, b) => b.score - a.score); 
+    updateDisplay();
 }
 
 function sortByLevel() {
     players.sort((a, b) => b.level - a.level);
+    updateDisplay();
 }
 
 function sortByFirstLetter() {
@@ -80,9 +83,9 @@ function sortPlayers() {
             sortByFirstLetter();
             break;
     }
+}
 
-function updateDisplay(){
+function updateDisplay() {
     updatePlayerList();
     savePlayers();
-}
 }
