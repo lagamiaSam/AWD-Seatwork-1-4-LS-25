@@ -6,14 +6,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-image: url(../img/mario.jpg);
-    padding-top: 90px;
-    padding-bottom: 60px;
+    background-image: url(../img/header1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
+    padding: 90px 0 60px 0;
 }
+
 
 .navigation {
     position: fixed;
