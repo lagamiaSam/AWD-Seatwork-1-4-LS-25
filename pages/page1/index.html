@@ -9,38 +9,31 @@
 </head>
 <body>
     <div class="navigation">
-        <h1><i class="fa-solid fa-web-awesome"></i>UpRanked</h1>
+        <h1><i class="fa-solid fa-trophy"></i> UpRanked</h1>
         <ul>
             <li><a href="../../index.html">Home</a></li>
-            <li><a href="../page1/index.html">Leadboards</a></li>
+            <li><a href="../page1/index.html">Leaderboard</a></li>
         </ul>
     </div>
-    <div class="content">
+    <div class="player-management">
+        <h2>Leadboards</h2>
+        <label for="sortCriteria">Sort By: </label>
+        <select id="sortCriteria"><
+            <option value="name">Name</option>
+            <option value="score">Score</option>
+            <option value="level">level</option>
+            <option value="firstLetter">First Letter of Name</option>
+        </select>
+        <button onclick="sortPlayers()">Sort</button>
+        <div id="playerList" class="player-list"></div>
+
+        <h3>Add Player</h3>
+        <input type="text" id="playerName" placeholder="Name">
+        <input type="number" id="playerScore" placeholder="Score">
+        <input type="number" id="playerLevel" placeholder="Level">
+        <button onclick="addPlayer()">Add Player</button>
+        
+        <div id="playerList" class="player-list"></div>
     </div>
-    
-    <h2>Leadboard</h2>
-    <form id="playerForm">
-        <label for="playerName">Name: </label>
-        <input type="text" id="playerName" required>
-
-        <label for="playerScore">Score (1-100): </label>
-        <input type="number" id="playerScore" required>
-
-        <label for="playerLevel">Level (1-10): </label>
-        <input type="number" id="playerLevel" required>
-
-        <button type="submit">Add Player</button>
-    </form>
-
-    <h3>Player List</h3>
-    <table id="playerTable">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Score</th>
-                <th>level</th>
-            </tr>
-        </thead>
-    </table>
 </body>
 </html>
