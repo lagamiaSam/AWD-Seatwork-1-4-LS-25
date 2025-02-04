@@ -80,4 +80,9 @@ function sortPlayers() {
             sortByFirstLetter();
             break;
     }
+
+function updateDisplay(){
+    updatePlayerList();
+    savePlayers();
+}
 }
