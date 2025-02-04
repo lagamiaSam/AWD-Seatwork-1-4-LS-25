@@ -8,6 +8,7 @@ body {
     text-align: center;
     background-image: url(../img/mario.jpg);
     padding-top: 90px;
+    padding-bottom: 60px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,6 +150,27 @@ button:hover {
     border-radius: 6px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(24, 82, 169);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+}
+
 @media (max-width: 1920px) {
     body {
         font-size: 18px;
