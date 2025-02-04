@@ -62,3 +62,22 @@ function sortByFirstLetter() {
     players.sort((a, b) => a.name.charAt(0).localeCompare(b.name.charAt(0)));
     updateDisplay();
 }
+
+function sortPlayers() {
+    let criteria = document.getElementById("sortCriteria").value;
+
+    switch (criteria) {
+        case "name":
+            sortByName();
+            break;
+        case "score":
+            sortByScore();
+            break;
+        case "level":
+            sortByLevel();
+            break;
+        case "firstLetter":
+            sortByFirstLetter();
+            break;
+    }
+}
