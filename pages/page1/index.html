@@ -11,11 +11,36 @@
     <div class="navigation">
         <h1><i class="fa-solid fa-web-awesome"></i>UpRanked</h1>
         <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="../../index.html">Home</a></li>
             <li><a href="../page1/index.html">Leadboards</a></li>
         </ul>
     </div>
     <div class="content">
     </div>
+    
+    <h2>Leadboard</h2>
+    <form id="playerForm">
+        <label for="playerName">Name: </label>
+        <input type="text" id="playerName" required>
+
+        <label for="playerScore">Score (1-100): </label>
+        <input type="number" id="playerScore" required>
+
+        <label for="playerLevel">Level (1-10): </label>
+        <input type="number" id="playerLevel" required>
+
+        <button type="submit">Add Player</button>
+    </form>
+
+    <h3>Player List</h3>
+    <table id="playerTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+                <th>level</th>
+            </tr>
+        </thead>
+    </table>
 </body>
 </html>
