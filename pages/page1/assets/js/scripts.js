@@ -32,3 +32,15 @@ function updatePlayerList() {
     });
 
 }
+
+function savePlayers() {
+    localStorage.setItem("players", JSON.stringify(players));
+}
+
+function loadPlayers() {
+    let storedPlayers = localStorage.getItem("players");
+    if (storedPlayers){
+        players = JSON.parse(storedPlayers);
+        updatePlayerList();
+    }
+}
