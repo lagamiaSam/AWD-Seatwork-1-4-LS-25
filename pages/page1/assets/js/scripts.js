@@ -19,3 +19,16 @@ function addPlayer(){
         alert("Please enter valid values for name, score, and level.");
     }
 }
+
+function updatePlayerList() {
+    let playerList = document.getElementById("playerList");
+    playerList.innerHTML = ""; 
+
+    players.forEach(player => {
+        let playerDiv = document.createElement("div");
+        playerDiv.classList.add("player-item");
+        playerDiv.innerHTML = `<strong>Name:</strong> ${player.name} | <strong>Score:</strong> ${player.score} | <strong>Level:</strong> ${player.level}`;
+        playerList.appendChild(playerDiv);
+    });
+
+}
