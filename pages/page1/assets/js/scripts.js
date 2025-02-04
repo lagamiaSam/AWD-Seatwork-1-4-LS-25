@@ -30,7 +30,7 @@ function updatePlayerList() {
         let playerDiv = document.createElement("div");
         playerDiv.classList.add("player-item");
         playerDiv.innerHTML = `
-            <strong>Name:</strong> ${player.name} | 
+            <strong><i class="fa-solid fa-user"></i> Name:</strong> ${player.name} | 
             <strong>Score:</strong> ${player.score} | 
             <strong>Level:</strong> ${player.level} 
             <button onclick="deletePlayer(${index})">Delete</button>`;
