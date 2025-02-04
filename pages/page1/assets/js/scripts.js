@@ -44,3 +44,21 @@ function loadPlayers() {
         updatePlayerList();
     }
 }
+
+function sortByName() {
+    players.sort((a, b) => a.name.localeCompare(b.name));
+    updateDisplay();
+}
+
+function sortByScore() {
+    players.sort((a,b) => b.score - a.score);
+}
+
+function sortByLevel() {
+    players.sort((a, b) => b.level - a.level);
+}
+
+function sortByFirstLetter() {
+    players.sort((a, b) => a.name.charAt(0).localeCompare(b.name.charAt(0)));
+    updateDisplay();
+}
