@@ -4,32 +4,25 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
-  </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
+  <a href="https://github.com/lagamiaSam/">
   <h3 align="center">AWD-Seatwork-1-4-LS-25</h3>
 </div>
-<!-- TODO: Make a short description -->
+
 <div align="center">
-  Short Description. (Optional)
+  UpRanked is a leaderboard tracking system that allows players to add, sort, and manage their rankings based on score, level, and name. Easily track progress, compete with others, and climb the ranks! 🚀
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=lagamiaSam/AWD-Seatwork-1-4-LS-25)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+[![wakatime](https://wakatime.com/badge/user/fd3ba1ac-97d0-47fc-a9f6-66db8812adb9/project/bc78f6ce-0a5d-4a6c-8bcd-9dda281a3373.svg)](https://wakatime.com/badge/user/fd3ba1ac-97d0-47fc-a9f6-66db8812adb9/project/bc78f6ce-0a5d-4a6c-8bcd-9dda281a3373)
 
 ---
 
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,25 +50,18 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
+UpRanked is a web-based leaderboard tracking system that allows users to add, manage, and sort player rankings based on different criteria such as name, score, and level.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The purpose of UpRanked is to provide a platform for gamers to track their progress, compete with others, and showcase their achievements in a structured leaderboard system. 🚀
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Multiple-Page Website
+- Leaderboard System
+- Dynamic Sorting
+- Interactive UI
+- Responsive Design
 
 ### Technology
-<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -92,7 +78,7 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+AWD-Seatwork-1-4-LS-25
 └─ assets
 |   └─ css
 |   |   └─ style.css
@@ -101,7 +87,7 @@ WD-ProjectName
 |   └─ js
 |       └─ script.js
 └─ pages
-|  └─ pageName
+|  └─ Leaderboard
 |     └─ assets
 |     |  └─ css
 |     |  |  └─ style.css
@@ -115,8 +101,9 @@ WD-ProjectName
 ```
 
 ## Resources
-
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| W3Schools | serves as a valuable resource for learning web development technologies, providing simple and accessible tutorials.  | https://www.w3schools.com |
+
+| Font Awesome | provides scalable vector icons for web and app design. It helps enhance user interfaces with intuitive icons. | https://fontawesome.com|
+
