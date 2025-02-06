@@ -104,6 +104,5 @@ AWD-Seatwork-1-4-LS-25
 | Title | Purpose | Link |
 |-|-|-|
 | W3Schools | serves as a valuable resource for learning web development technologies, providing simple and accessible tutorials.  | https://www.w3schools.com |
-
 | Font Awesome | provides scalable vector icons for web and app design. It helps enhance user interfaces with intuitive icons. | https://fontawesome.com|
 
